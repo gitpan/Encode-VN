@@ -1,6 +1,6 @@
 package Encode::VN;
 use 5.007003;
-our $VERSION = "0.01";
+our $VERSION = '0.02';
 use Encode;
 use XSLoader;
 XSLoader::load(__PACKAGE__,$VERSION);
@@ -21,7 +21,7 @@ Encode::VN - Extra sets of Vietnamese encodings
 
 =head1 VERSION
 
-This document describes version 0.01 of Encode::VN, released September 14, 2013.
+This document describes version 0.02 of Encode::VN, released September 15, 2013.
 
 =head1 SYNOPSIS
 
@@ -30,7 +30,7 @@ This document describes version 0.01 of Encode::VN, released September 14, 2013.
 
     # VNI (ANSI)
     $vni  = encode("x-viet-vni", $utf8);
-    $utf8 = decode("x-viet-vni", $euc_tw);
+    $utf8 = decode("x-viet-vni", $vni );
 
 =head1 DESCRIPTION
 
@@ -45,20 +45,25 @@ encountered; hence, this CPAN module tries to provide the rest of them.
 
 This version includes the following encoding tables:
 
-  Canonical        Alias                        Description
+  Canonical        Alias                       Description
   -----------------------------------------------------------------------------
-  x-viet-vni       /\bVNI(-ANSI)?$/i            VNI ANSI (Win/Unix)
-  x-viet-vni-ascii /\bVNI-ASCII$/i              VNI ASCII (DOS)
-  x-viet-vni-mac   /\bVNI-Mac$/i                VNI Mac
-  x-viet-vni-email /\bVNI-Email$/i              VNI Internet Mail (Win/Unix/Mac)
-  x-viet-vps       /\bVPS$/i                    Vietnamese Professionals Society
-  x-viet-tcvn5712  /\bX-Viet-TCVN5712-1993$/i   TCVN 5712:1993
+  x-viet-vni       /\bVNI(-ANSI)?$/i           VNI ANSI (Win/Unix)
+  x-viet-vni-ascii /\bVNI-ASCII$/i             VNI ASCII (DOS)
+  x-viet-vni-mac   /\bVNI-Mac$/i               VNI Mac
+  x-viet-vni-email /\bVNI-Email$/i             VNI Internet Mail (Win/Unix/Mac)
+  x-viet-vps       /\bVPS$/i                   Vietnamese Professionals Society
+  x-viet-tcvn5712  /\bX-Viet-TCVN5712-1993$/i  TCVN 5712:1993
 
 =head1 SEE ALSO
 
 Vietnamese Unicode SourceForge project L<http://vietunicode.sourceforge.net/>
 
 VNI Wikipedia page                     L<http://en.wikipedia.org/wiki/VNI>
+
+Vietnam Standards TCVN Wikipedia page  L<http://en.wikipedia.org/wiki/Vietnam_Standards>
+
+Mozilla VPS mappings                   L<http://lxr.mozilla.org/seamonkey/source/intl/uconv/ucvlatin/vps.uf>
+                                       L<http://lxr.mozilla.org/seamonkey/source/intl/uconv/ucvlatin/vps.ut>
 
 L<Encode>
 
@@ -67,7 +72,7 @@ L<Encode>
 Maps for C<VNI> are generated from the F<vnichar.htm> file,
 courtesy of VNI Sofware Comany, L<http://vnisoft.com/english/vnichar.htm>).
 
-Map for C<VPS> and C<TCVN5712> are generated from the "Unicode & Vietnamese
+Maps for C<VPS> and C<TCVN5712> are generated from the "Unicode & Vietnamese
 Legacy Character Encodings" page courtesy of the Vietnamese Unicode project
 on SourceForge, L<http://vietunicode.sourceforge.net/charset/>.
 
@@ -81,7 +86,7 @@ Copyright 2013 by John Wang E<lt>johncwang@gmail.comE<gt>.
 
 This software is released under the MIT license cited below.
 
-=head2 The "MIT" License
+=head1 The "MIT" License
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
