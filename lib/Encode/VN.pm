@@ -1,6 +1,6 @@
 package Encode::VN;
 use 5.007003;
-our $VERSION = '0.03';
+our $VERSION = '0.04';
 use Encode;
 use XSLoader;
 XSLoader::load(__PACKAGE__,$VERSION);
@@ -86,7 +86,7 @@ Copyright 2013 by John Wang E<lt>johncwang@gmail.comE<gt>.
 
 This software is released under the MIT license cited below.
 
-=head1 The "MIT" License
+=head2 The "MIT" License
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
