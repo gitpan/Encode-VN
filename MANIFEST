@@ -14,6 +14,8 @@ inc/Module/Install/Metadata.pm
 inc/Module/Install/Win32.pm
 inc/Module/Install/WriteAll.pm
 lib/Encode/VN.pm
+ref/charmap_vietunicode.sourceforge.net_charset.htm
+ref/charmap_vnisoft.com_english_vnichar.htm
 t/00_compile.t
 ucm/x-viet-tcvn5712.ucm
 ucm/x-viet-vni-ascii.ucm

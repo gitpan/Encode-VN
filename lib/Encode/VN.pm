@@ -1,6 +1,6 @@
 package Encode::VN;
 use 5.007003;
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 use Encode;
 use XSLoader;
 XSLoader::load(__PACKAGE__,$VERSION);
