@@ -1,6 +1,6 @@
 package Encode::VN;
 use 5.007003;
-our $VERSION = '0.04';
+our $VERSION = '0.05';
 use Encode;
 use XSLoader;
 XSLoader::load(__PACKAGE__,$VERSION);
@@ -21,7 +21,7 @@ Encode::VN - Extra sets of Vietnamese encodings
 
 =head1 VERSION
 
-This document describes version 0.02 of Encode::VN, released September 15, 2013.
+This document describes version 0.05 of Encode::VN, released September 15, 2013.
 
 =head1 SYNOPSIS
 
@@ -36,7 +36,7 @@ This document describes version 0.02 of Encode::VN, released September 15, 2013.
 
 Perl 5.7.3 and later ship with an adequate set of Vietnamese encodings,
 including the commonly used C<VISCII> and C<CP1258> (also known as
-C<MacVietnamese>).
+C<MacVietnamese>) encodings.
 
 However, there are additional Vietnamese encodings that are used and may be
 encountered; hence, this CPAN module tries to provide the rest of them.
@@ -56,21 +56,21 @@ This version includes the following encoding tables:
 
 =head1 SEE ALSO
 
-Vietnamese Unicode SourceForge project L<http://vietunicode.sourceforge.net/>
+Vietnamese Unicode SourceForge project: L<http://vietunicode.sourceforge.net/>
 
-VNI Wikipedia page                     L<http://en.wikipedia.org/wiki/VNI>
+VNI Wikipedia page: L<http://en.wikipedia.org/wiki/VNI>
 
-Vietnam Standards TCVN Wikipedia page  L<http://en.wikipedia.org/wiki/Vietnam_Standards>
+Vietnam Standards TCVN Wikipedia page: L<http://en.wikipedia.org/wiki/Vietnam_Standards>
 
-Mozilla VPS mappings                   L<http://lxr.mozilla.org/seamonkey/source/intl/uconv/ucvlatin/vps.uf>
-                                       L<http://lxr.mozilla.org/seamonkey/source/intl/uconv/ucvlatin/vps.ut>
+Mozilla VPS mappings: L<http://lxr.mozilla.org/seamonkey/source/intl/uconv/ucvlatin/vps.uf>,
+                      L<http://lxr.mozilla.org/seamonkey/source/intl/uconv/ucvlatin/vps.ut>
 
 L<Encode>
 
 =head1 ACKNOWLEDGEMENTS
 
 Maps for C<VNI> are generated from the F<vnichar.htm> file,
-courtesy of VNI Sofware Comany, L<http://vnisoft.com/english/vnichar.htm>).
+courtesy of the VNI Sofware Comany, L<http://vnisoft.com/english/vnichar.htm>).
 
 Maps for C<VPS> and C<TCVN5712> are generated from the "Unicode & Vietnamese
 Legacy Character Encodings" page courtesy of the Vietnamese Unicode project
