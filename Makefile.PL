@@ -12,7 +12,7 @@ use Config;
 my $name   = 'VN';
 my %tables = (
     VN_t    => [
-        map "ucm/$_.ucm", qw( x-viet-tcvn5712 x-viet-vni x-viet-vni-ascii x-viet-vni-email x-viet-vni-mac x-viet-vps )
+        map "ucm/$_.ucm", qw( x-viet-vni x-viet-vni-ascii x-viet-vni-email x-viet-vni-mac x-viet-vps )
     ],
 );
 
